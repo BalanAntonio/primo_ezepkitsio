@@ -20,9 +20,16 @@ namespace primo_ezepkitsio
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CProdotto pNuovo = new CProdotto(txt_nome.Text, float.Parse(txt_prezzo.Text), int.Parse(txt_quantita.Text));
-            tutto.Add(pNuovo);
-
+            float a; int b;
+            if (float.TryParse(txt_prezzo.Text, out a) && int.TryParse(txt_quantita.Text,out b) && !string.IsNullOrEmpty(txt_nome.Text))
+            {
+                CProdotto pNuovo = new CProdotto(txt_nome.Text, float.Parse(txt_prezzo.Text), int.Parse(txt_quantita.Text));
+                tutto.Add(pNuovo);
+            }
+            else
+            {
+                MessageBox.Show("Campi input non validi.");
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
