@@ -35,10 +35,6 @@
             this.txt_prezzo = new System.Windows.Forms.TextBox();
             this.lbl_quantita = new System.Windows.Forms.Label();
             this.txt_quantita = new System.Windows.Forms.TextBox();
-            this.btn_visualizza = new System.Windows.Forms.Button();
-            this.txt_filtro = new System.Windows.Forms.TextBox();
-            this.btn_filtra = new System.Windows.Forms.Button();
-            this.lbl_filtra = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_aggiungi
@@ -47,7 +43,7 @@
             this.btn_aggiungi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_aggiungi.Location = new System.Drawing.Point(12, 198);
             this.btn_aggiungi.Name = "btn_aggiungi";
-            this.btn_aggiungi.Size = new System.Drawing.Size(103, 34);
+            this.btn_aggiungi.Size = new System.Drawing.Size(252, 38);
             this.btn_aggiungi.TabIndex = 0;
             this.btn_aggiungi.Text = "Aggiungi P.";
             this.btn_aggiungi.UseVisualStyleBackColor = false;
@@ -107,57 +103,11 @@
             this.txt_quantita.Size = new System.Drawing.Size(252, 20);
             this.txt_quantita.TabIndex = 5;
             // 
-            // btn_visualizza
-            // 
-            this.btn_visualizza.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_visualizza.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_visualizza.Location = new System.Drawing.Point(12, 238);
-            this.btn_visualizza.Name = "btn_visualizza";
-            this.btn_visualizza.Size = new System.Drawing.Size(103, 34);
-            this.btn_visualizza.TabIndex = 7;
-            this.btn_visualizza.Text = "Visualizza";
-            this.btn_visualizza.UseVisualStyleBackColor = false;
-            this.btn_visualizza.Click += new System.EventHandler(this.btn_visualizza_Click);
-            // 
-            // txt_filtro
-            // 
-            this.txt_filtro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txt_filtro.Location = new System.Drawing.Point(131, 218);
-            this.txt_filtro.Name = "txt_filtro";
-            this.txt_filtro.Size = new System.Drawing.Size(123, 22);
-            this.txt_filtro.TabIndex = 8;
-            // 
-            // btn_filtra
-            // 
-            this.btn_filtra.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_filtra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_filtra.Location = new System.Drawing.Point(131, 247);
-            this.btn_filtra.Name = "btn_filtra";
-            this.btn_filtra.Size = new System.Drawing.Size(123, 24);
-            this.btn_filtra.TabIndex = 9;
-            this.btn_filtra.Text = "Filtra";
-            this.btn_filtra.UseVisualStyleBackColor = false;
-            this.btn_filtra.Click += new System.EventHandler(this.btn_filtra_Click);
-            // 
-            // lbl_filtra
-            // 
-            this.lbl_filtra.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F, System.Drawing.FontStyle.Bold);
-            this.lbl_filtra.Location = new System.Drawing.Point(121, 197);
-            this.lbl_filtra.Name = "lbl_filtra";
-            this.lbl_filtra.Size = new System.Drawing.Size(143, 18);
-            this.lbl_filtra.TabIndex = 10;
-            this.lbl_filtra.Text = "Filtra per prezzo";
-            this.lbl_filtra.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(276, 286);
-            this.Controls.Add(this.lbl_filtra);
-            this.Controls.Add(this.btn_filtra);
-            this.Controls.Add(this.txt_filtro);
-            this.Controls.Add(this.btn_visualizza);
+            this.ClientSize = new System.Drawing.Size(276, 248);
             this.Controls.Add(this.lbl_quantita);
             this.Controls.Add(this.txt_quantita);
             this.Controls.Add(this.lbl_prezzo);
@@ -182,10 +132,6 @@
         private System.Windows.Forms.TextBox txt_prezzo;
         private System.Windows.Forms.Label lbl_quantita;
         private System.Windows.Forms.TextBox txt_quantita;
-        private System.Windows.Forms.Button btn_visualizza;
-        private System.Windows.Forms.TextBox txt_filtro;
-        private System.Windows.Forms.Button btn_filtra;
-        private System.Windows.Forms.Label lbl_filtra;
     }
 }
 

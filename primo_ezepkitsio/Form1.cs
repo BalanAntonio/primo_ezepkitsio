@@ -12,7 +12,16 @@ namespace primo_ezepkitsio
 {
     public partial class Form1 : Form
     {
-        List<CProdotto> tutto = new List<CProdotto>();
+        private CProdotto coso;
+        internal CProdotto PProdotto
+        {
+            get
+            {
+                return coso;
+            }
+        }
+
+        
         public Form1()
         {
             InitializeComponent();
@@ -21,10 +30,11 @@ namespace primo_ezepkitsio
         private void button1_Click(object sender, EventArgs e)
         {
             float a; int b;
-            if (float.TryParse(txt_prezzo.Text, out a) && int.TryParse(txt_quantita.Text,out b) && !string.IsNullOrEmpty(txt_nome.Text))
+            if (float.TryParse(txt_prezzo.Text, out a) && int.TryParse(txt_quantita.Text,out b) && !string.IsNullOrEmpty(txt_nome.Text) && a>0 && b>0)
             {
-                CProdotto pNuovo = new CProdotto(txt_nome.Text, float.Parse(txt_prezzo.Text), int.Parse(txt_quantita.Text));
-                tutto.Add(pNuovo);
+                coso = new CProdotto(txt_nome.Text, float.Parse(txt_prezzo.Text), int.Parse(txt_quantita.Text));
+                MessageBox.Show($"Aggiunto prodotto {txt_nome.Text}");
+                DialogResult = DialogResult.OK;     this.Close();
             }
             else
             {
@@ -34,40 +44,17 @@ namespace primo_ezepkitsio
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            DialogResult = DialogResult.None;
         }
 
         private void btn_visualizza_Click(object sender, EventArgs e)
         {
-            string stampa = "";
-
-            for(int i = 0; i<tutto.Count; i++)
-            {
-                stampa += tutto.ElementAt(i).Visualizza();
-            }
-
-            MessageBox.Show(stampa);
+            
         }
 
         private void btn_filtra_Click(object sender, EventArgs e)
         {
-            float filtro;
-            string stampa = "";
-            if(float.TryParse(txt_filtro.Text, out filtro))
-            {
-                for(int i = 0;i < tutto.Count; i++)
-                {
-                    CProdotto prodotto = tutto.ElementAt(i);
-                    if (prodotto.Prezzo <= filtro)
-                    {
-                        stampa += prodotto.Visualizza();
-                    }
-                }
-            }
-            else
-            {
-                MessageBox.Show("Filtro non valido.")
-            }
+            
         }
     }
 }
