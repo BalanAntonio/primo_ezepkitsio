@@ -11,6 +11,15 @@ namespace primo_ezepkitsio
         string p_nome;
         float p_prezzo;
         int p_quantita;
+
+        public float Prezzo
+        {
+            get
+            {
+                return p_prezzo;
+            }
+        }
+
         public CProdotto()
         {
             p_nome = ""; p_prezzo = 0f; p_quantita = 0;

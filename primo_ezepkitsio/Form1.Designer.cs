@@ -36,7 +36,7 @@
             this.lbl_quantita = new System.Windows.Forms.Label();
             this.txt_quantita = new System.Windows.Forms.TextBox();
             this.btn_visualizza = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_filtro = new System.Windows.Forms.TextBox();
             this.btn_filtra = new System.Windows.Forms.Button();
             this.lbl_filtra = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -44,7 +44,7 @@
             // btn_aggiungi
             // 
             this.btn_aggiungi.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_aggiungi.Font = new System.Drawing.Font("Noto Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_aggiungi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_aggiungi.Location = new System.Drawing.Point(12, 198);
             this.btn_aggiungi.Name = "btn_aggiungi";
             this.btn_aggiungi.Size = new System.Drawing.Size(103, 34);
@@ -55,7 +55,7 @@
             // 
             // txt_nome
             // 
-            this.txt_nome.Font = new System.Drawing.Font("Noto Mono", 8.25F);
+            this.txt_nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.txt_nome.Location = new System.Drawing.Point(12, 47);
             this.txt_nome.Name = "txt_nome";
             this.txt_nome.Size = new System.Drawing.Size(252, 20);
@@ -63,7 +63,7 @@
             // 
             // lbl_nome
             // 
-            this.lbl_nome.Font = new System.Drawing.Font("Noto Mono", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_nome.Location = new System.Drawing.Point(12, 21);
             this.lbl_nome.Name = "lbl_nome";
             this.lbl_nome.Size = new System.Drawing.Size(252, 23);
@@ -73,7 +73,7 @@
             // 
             // lbl_prezzo
             // 
-            this.lbl_prezzo.Font = new System.Drawing.Font("Noto Mono", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_prezzo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_prezzo.Location = new System.Drawing.Point(12, 76);
             this.lbl_prezzo.Name = "lbl_prezzo";
             this.lbl_prezzo.Size = new System.Drawing.Size(252, 23);
@@ -83,7 +83,7 @@
             // 
             // txt_prezzo
             // 
-            this.txt_prezzo.Font = new System.Drawing.Font("Noto Mono", 8.25F);
+            this.txt_prezzo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.txt_prezzo.Location = new System.Drawing.Point(12, 102);
             this.txt_prezzo.Name = "txt_prezzo";
             this.txt_prezzo.Size = new System.Drawing.Size(252, 20);
@@ -91,7 +91,7 @@
             // 
             // lbl_quantita
             // 
-            this.lbl_quantita.Font = new System.Drawing.Font("Noto Mono", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_quantita.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_quantita.Location = new System.Drawing.Point(12, 135);
             this.lbl_quantita.Name = "lbl_quantita";
             this.lbl_quantita.Size = new System.Drawing.Size(252, 23);
@@ -101,7 +101,7 @@
             // 
             // txt_quantita
             // 
-            this.txt_quantita.Font = new System.Drawing.Font("Noto Mono", 8.25F);
+            this.txt_quantita.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.txt_quantita.Location = new System.Drawing.Point(12, 161);
             this.txt_quantita.Name = "txt_quantita";
             this.txt_quantita.Size = new System.Drawing.Size(252, 20);
@@ -110,7 +110,7 @@
             // btn_visualizza
             // 
             this.btn_visualizza.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_visualizza.Font = new System.Drawing.Font("Noto Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_visualizza.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_visualizza.Location = new System.Drawing.Point(12, 238);
             this.btn_visualizza.Name = "btn_visualizza";
             this.btn_visualizza.Size = new System.Drawing.Size(103, 34);
@@ -119,18 +119,18 @@
             this.btn_visualizza.UseVisualStyleBackColor = false;
             this.btn_visualizza.Click += new System.EventHandler(this.btn_visualizza_Click);
             // 
-            // textBox1
+            // txt_filtro
             // 
-            this.textBox1.Font = new System.Drawing.Font("Noto Mono", 9.75F);
-            this.textBox1.Location = new System.Drawing.Point(131, 218);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(123, 23);
-            this.textBox1.TabIndex = 8;
+            this.txt_filtro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.txt_filtro.Location = new System.Drawing.Point(131, 218);
+            this.txt_filtro.Name = "txt_filtro";
+            this.txt_filtro.Size = new System.Drawing.Size(123, 22);
+            this.txt_filtro.TabIndex = 8;
             // 
             // btn_filtra
             // 
             this.btn_filtra.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_filtra.Font = new System.Drawing.Font("Noto Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_filtra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_filtra.Location = new System.Drawing.Point(131, 247);
             this.btn_filtra.Name = "btn_filtra";
             this.btn_filtra.Size = new System.Drawing.Size(123, 24);
@@ -141,7 +141,7 @@
             // 
             // lbl_filtra
             // 
-            this.lbl_filtra.Font = new System.Drawing.Font("Noto Mono", 8.75F, System.Drawing.FontStyle.Bold);
+            this.lbl_filtra.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F, System.Drawing.FontStyle.Bold);
             this.lbl_filtra.Location = new System.Drawing.Point(121, 197);
             this.lbl_filtra.Name = "lbl_filtra";
             this.lbl_filtra.Size = new System.Drawing.Size(143, 18);
@@ -156,7 +156,7 @@
             this.ClientSize = new System.Drawing.Size(276, 286);
             this.Controls.Add(this.lbl_filtra);
             this.Controls.Add(this.btn_filtra);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_filtro);
             this.Controls.Add(this.btn_visualizza);
             this.Controls.Add(this.lbl_quantita);
             this.Controls.Add(this.txt_quantita);
@@ -183,7 +183,7 @@
         private System.Windows.Forms.Label lbl_quantita;
         private System.Windows.Forms.TextBox txt_quantita;
         private System.Windows.Forms.Button btn_visualizza;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_filtro;
         private System.Windows.Forms.Button btn_filtra;
         private System.Windows.Forms.Label lbl_filtra;
     }

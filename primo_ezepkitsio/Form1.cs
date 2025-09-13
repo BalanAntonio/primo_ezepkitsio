@@ -51,7 +51,23 @@ namespace primo_ezepkitsio
 
         private void btn_filtra_Click(object sender, EventArgs e)
         {
-
+            float filtro;
+            string stampa = "";
+            if(float.TryParse(txt_filtro.Text, out filtro))
+            {
+                for(int i = 0;i < tutto.Count; i++)
+                {
+                    CProdotto prodotto = tutto.ElementAt(i);
+                    if (prodotto.Prezzo <= filtro)
+                    {
+                        stampa += prodotto.Visualizza();
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Filtro non valido.")
+            }
         }
     }
 }
