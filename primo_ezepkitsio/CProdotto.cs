@@ -24,7 +24,7 @@ namespace primo_ezepkitsio
         {
             return "Nome:\t\t" + p_nome +
                 "\nPrezzo\t\t" + p_prezzo +
-                "\nQuantità\t\t" + p_quantita;
+                "\nQuantità\t\t" + p_quantita + "\n\n";
         }
 
     }

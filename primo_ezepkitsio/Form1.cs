@@ -20,7 +20,9 @@ namespace primo_ezepkitsio
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            CProdotto pNuovo = new CProdotto(txt_nome.Text, float.Parse(txt_prezzo.Text), int.Parse(txt_quantita.Text));
+            tutto.Add(pNuovo);
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -30,7 +32,14 @@ namespace primo_ezepkitsio
 
         private void btn_visualizza_Click(object sender, EventArgs e)
         {
+            string stampa = "";
 
+            for(int i = 0; i<tutto.Count; i++)
+            {
+                stampa += tutto.ElementAt(i).Visualizza();
+            }
+
+            MessageBox.Show(stampa);
         }
 
         private void btn_filtra_Click(object sender, EventArgs e)
